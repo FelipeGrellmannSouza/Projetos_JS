@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>MyRoutine</title>
+</head>
+<body>
+    <div class="models">
+        <div class="item" draggable="true">
+            <div class="item__icon">
+                
+            </div>
+            <div class="item__text">
+                <div class="item__title">
+                    
+                </div>
+                <div class="item__desc">
+
+                </div>
+            </div>
+        </div>  
+    </div>
+    <header>        
+        <button class="add-item">➕</button>
+        <h1>MyRoutine</h1>
+        <button class="delete-item">🗑️</button>
+    </header>
+    <main>  
+        <div class="window">
+            <div class="window__body">
+                <div class="window__title">
+                    <h1>Criar nova Tarefa</h1>
+                </div>
+                <fieldset id="window_fildset">
+                    <div class="input_radio">
+                        <label>Icon:</label> 
+                        <div class="radio_options">
+                            <input type="radio" id="iconChoice1" name="icon" value="🔴"/><label for="iconChoice1">🔴Urgent</label>
+                            <input type="radio" id="iconChoice2" name="icon" value="🟠"/><label for="iconChoice2">🟠Important</label>
+                            <input type="radio" id="iconChoice3" name="icon" value="🟡"/><label for="iconChoice3">🟡non-priority</label>
+                        </div>
+                    </div>
+                    <div class="input_text">
+                        <div class="input_title_area">
+                            <label>Title:</label>
+                            <input class="input_title" type="text">
+                        </div>
+                        <div class="input_desc_area"> 
+                            <label>Description:</label>
+                            <input class="input_desc" type="text">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="window__buttons">
+                    <button id="btnCancel">Cancel</button>
+                    <button id="btnCreate">Create</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="to-do">
+                <div class="list__header">
+                    <div class="list__title">To Do</div>
+                </div>
+                <div id="to-do__area" class="list__area">           
+
+                </div>
+            </div>
+            <div class="finished">
+                <div class="list__title">Finished</div>
+                <div class="list__area">            
+                    <div class="list__area-dragable" area-type="finished">
+
+                    </div>
+                </div>
+            </div>
+            <div class="skiped">
+                <div class="list__title" artype="">Skiped</div>
+                <div class="list__area">
+                    <div class="list__area-dragable" area-type="skiped">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

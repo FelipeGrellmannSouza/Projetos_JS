@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+header h1 {
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 50px;
+    margin-top: 30px;
+}
+header button {
+    font-size: 50px;
+    background-color: #00000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.to-do, .finished, .skiped {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px;
+    align-items: center;
+    width: 250px;
+    height: 500px;
+    background-color: #2d9ed2;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+.list__header { 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.list__title {
+    padding: 20px;
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+}
+button {
+    border: 0;
+}
+
+.list__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    height: 400px;
+    width: 275px;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.models {
+    display: none;
+}
+.item {
+    display: flex;
+    align-items: center;
+    background-color: #2ca75d;
+    width: 250px;
+    height: 70px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.item__icon {
+    font-size: 35px;
+}
+.item__title {
+    font-family: Arial;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.item__text {
+    font-size: 12px;
+    font-family: Arial;
+    color: #ffffff;
+}
+.window {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.window__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.window__button button{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+}
+.window__title h1 {
+    margin-bottom: 20px;
+}
+#window_fildset {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#window_fildset label {
+    font-size: 20px;
+}
+.input_radio {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.input_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.input_text input {
+    font-size: 18px
+}
+.input_title_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    padding-top: 10px;
+}
+.input_desc_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.input_title, .input_desc {
+    width: 250px;
+    height: 25px;
+    margin-right: 20px;
+}
+.window__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+}
+.window__buttons button {
+    font-size: 25px;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+}
+#btnCancel {
+    background-color: #e76969;
+}
+#btnCancel:hover {
+    cursor: pointer;
+    background-color: #e24343;
+}
+#btnCreate {
+    background-color: #58e08e;
+}
+#btnCreate:hover {
+    cursor: pointer;
+    background-color: #16d663;
+}
+
