@@ -21,7 +21,7 @@ header h1 {
     font-size: 50px;
     margin-top: 30px;
 }
-header button {
+header button, header .delete-item {
     font-size: 50px;
     background-color: #00000000;
     border-radius: 10px;
@@ -91,6 +91,7 @@ button {
     border-radius: 20px;
     margin-top: 5px;
 }
+
 .item__icon {
     font-size: 35px;
 }
@@ -202,3 +203,19 @@ button {
     background-color: #16d663;
 }
 
+#finished__area .item {
+    background-color: #752222;
+}
+
+#skiped__area .item {
+    background-color: #ffa806;
+}
+
+
+
+.hover {
+    background-color: #eee
+}
+.item.dragging {
+    opacity: 0.5;
+}
